@@ -16,6 +16,11 @@ const formReducer = (state, action) => {
         ...state,
         currentPage: state.currentPage + 1,
       };
+      case 'GO_TO_PREV_PAGE':
+        return {
+          ...state,
+          currentPage: state.currentPage - 1,
+        };
     default:
       return state;
   }
